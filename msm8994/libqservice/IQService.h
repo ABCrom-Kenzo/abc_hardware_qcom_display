@@ -60,6 +60,7 @@ public:
         SET_PARTIAL_UPDATE = 19,   // Preference on partial update feature
         TOGGLE_SCREEN_UPDATE = 20, // Provides ability to disable screen updates
         APPLY_MODE_BY_ID = 40, //Apply display mode by ID
+		SET_CAMERA_STATUS = 30, // To notify display when camera is on and off
         COMMAND_LIST_END = 400,
     };
 
