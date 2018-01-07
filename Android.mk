@@ -1,6 +1,4 @@
 ifeq ($(TARGET_QCOM_DISPLAY_VARIANT),caf-msm8952)
-
-ifeq ($(call my-dir),$(call project-path-for,qcom-display))
 ifeq ($(call is-board-platform-in-list, msm8996),true)
     TARGET_USES_SDM = true
 else
@@ -27,7 +25,4 @@ ifneq ($(filter msm% apq%,$(TARGET_BOARD_PLATFORM)),)
     include $(call all-named-subdir-makefiles,$(display-hals))
 endif
 endif
-
-endif
-
 endif

@@ -5,11 +5,11 @@ LOCAL_MODULE                  := hwcomposer.$(TARGET_BOARD_PLATFORM)
 LOCAL_VENDOR_MODULE           := true
 LOCAL_MODULE_RELATIVE_PATH    := hw
 LOCAL_MODULE_TAGS             := optional
-LOCAL_C_INCLUDES              := $(call project-path-for,qcom-display)/sdm/include/ \
-                                 $(call project-path-for,qcom-display)/libgralloc/ \
-                                 $(call project-path-for,qcom-display)/libqservice/ \
-                                 $(call project-path-for,qcom-display)/libqdutils/ \
-                                 $(call project-path-for,qcom-display)/libcopybit/
+LOCAL_C_INCLUDES              := hardware/qcom/display/sdm/include/ \
+                                 hardware/qcom/display/libgralloc/ \
+                                 hardware/qcom/display/libqservice/ \
+                                 hardware/qcom/display/libqdutils/ \
+                                 hardware/qcom/display/libcopybit/
 
 LOCAL_CFLAGS                  := -Wno-missing-field-initializers -Wno-unused-parameter \
                                  -Wconversion -Wall -Werror \
